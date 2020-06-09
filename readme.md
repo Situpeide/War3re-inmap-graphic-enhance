@@ -12,13 +12,7 @@ The war3map files is in TestBundle/ and Demo/
 
 ├── Readme // Readme
 
-├── Code // 
-
-| ├── Bzcon UI // script of Blzcon UI 新UI的代码
-
-| ├── Blzcon UI command bar fixed // a fixed version of Blzcon UI
-
-| ├── Lots of cs // To decompress some blz files 
+├── Code // Jass, DXBV, C# and More
 
 ├── Demo // example war3 map 演示魔兽地图
 
@@ -44,7 +38,7 @@ The war3map files is in TestBundle/ and Demo/
 
 | ├── echoisles-re1.w3x // echo isles demo with enhancement and old UI 一个在EI上的demo
 
-├── Mod // Graphic Enhancement Mod wrapped using Winrar
+├── Mod // Graphic Enhancement Mod wrapped using Winrar (Outdated)
 
 | ├── war3enhance.reg // Allow Local files 允许本地存储注册表
 
@@ -62,7 +56,7 @@ The war3map files is in TestBundle/ and Demo/
 
 | │ ├── *.w3x//With UI
 
-├── Backup // currently empty 现在是空的
+├── Backup // currently empty 
 
 │ ├──
 
