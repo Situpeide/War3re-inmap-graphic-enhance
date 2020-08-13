@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Warcraft 3 UI</title>
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, minimal-ui" />
+        <script>
+            window.__DEBUG = new Boolean('').valueOf();
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <div id="portal"></div>
+        <img id="Quenching3" style="position: absolute;right: 15px; top: 0px;z-index: 0;" src="QuenchingOn.png" height="350px">
+        <img id="Quenching2" src=".\icons\close-icon-disabled.png" width="35px" height="35px" style="position: absolute;right: 60px; top: 85px;z-index: 0;" onclick="cque()">
+        
+        <script src="GlueManager.js">
+        </script>
+        <script>
+            function cque()
+            {
+                document.getElementById("Quenching2").style.display = "none";
+                document.getElementById("Quenching3").style.display = "none";
+            }
+            function lque()
+            {
+                document.getElementById("Quenching3").style.display = "none";
+            }
+        </script>
+    </body>
+</html>

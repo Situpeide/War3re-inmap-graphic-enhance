@@ -1,0 +1,53 @@
+Frame "FRAME" "MiniMapFrame" {
+    Width 0.112,
+    Height 0.112, 
+	SetPoint BOTTOMLEFT, "ConsoleUI", BOTTOMLEFT, 0.009375, 0.006875,			
+	SetPoint TOPRIGHT, "ConsoleUI", BOTTOMLEFT, 0.115, 0.115,
+}
+
+Frame "SIMPLEBUTTON" "MinimapButtonTemplate" {
+    Width 0.015,
+    Height 0.015,
+}
+
+Texture "MiniMapSignalButtonEnabled" {
+    File "MiniMapSignalButtonEnabled",
+    TexCoord 0.0, 1.0, 0.0, 1.0,
+}
+Texture "MiniMapSignalButtonPushed" {
+    File "MiniMapSignalButtonPushed",
+    TexCoord 0.0, 1.0, 0.0, 1.0,
+}
+Texture "MiniMapSignalButtonDisabled" {    
+    File "MiniMapSignalButtonDisabled",
+    TexCoord 0.0, 1.0, 0.0, 1.0,
+}
+
+Frame "SIMPLEFRAME" "MinimapButtonBar" {
+    UseActiveContext,
+    SetAllPoints,
+
+    Frame "SIMPLEBUTTON" "MinimapSignalButton" INHERITS "MinimapButtonTemplate" {
+		DecorateFileNames,
+		SetPoint TOPLEFT, "MinimapButtonBar", BOTTOMLEFT, 0.125, 0.115,
+		NormalTexture "MiniMapSignalButtonEnabled",
+		PushedTexture "MiniMapSignalButtonPushed",
+		DisabledTexture "MiniMapSignalButtonDisabled",		
+    }
+	
+    Frame "SIMPLEBUTTON" "MiniMapTerrainButton" INHERITS "MinimapButtonTemplate" {
+		SetPoint TOPLEFT, "MinimapButtonBar", BOTTOMLEFT, 0.125, 0.098,	
+    }
+	
+    Frame "SIMPLEBUTTON" "MiniMapAllyButton" INHERITS "MinimapButtonTemplate" {
+		SetPoint TOPLEFT, "MinimapButtonBar", BOTTOMLEFT, 0.125, 0.08,
+    }
+	
+    Frame "SIMPLEBUTTON" "MiniMapCreepButton" INHERITS "MinimapButtonTemplate" {
+		SetPoint TOPLEFT, "MinimapButtonBar", BOTTOMLEFT, 0.125, 0.063,
+    }
+	
+    Frame "SIMPLEBUTTON" "FormationButton" INHERITS "MinimapButtonTemplate" {
+		SetPoint TOPLEFT, "MinimapButtonBar", BOTTOMLEFT, 0.125, 0.04,
+    }
+}
